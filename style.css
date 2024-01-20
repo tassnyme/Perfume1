@@ -1,0 +1,99 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: hsl(30, 38%, 92%);
+}
+.card{
+    display: flex;
+    background-color: rgb(249, 249, 248);
+    max-width: 375px;
+    margin: auto;
+    border-radius: 20px;
+    height:400px
+
+
+}
+.container{
+      display: flex;
+      flex-direction: column;
+      padding: 19px;
+      width: 50%;
+      order: 2;
+      
+}
+.image{
+   width: 200px;
+   height: auto;
+   order: 1;
+   
+}
+img{
+   width: 100%;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   height: 100%;
+   object-fit: cover;
+}
+h1{
+    font-size: 29px;
+    position: relative;
+    top: 20px;
+}
+.pa{
+    font-size: 16px;
+    letter-spacing: 6px;
+    text-transform:uppercase ;
+    font-family: sans-serif;
+    color:hsl(228, 12%, 48%);
+}
+.pa2{
+    font-size: 14px;
+    position: relative;
+    top: 40px;
+    color: hsl(228, 12%, 48%) ;
+    text-wrap: wrap;
+    font-weight: 400;
+}
+ .btn{
+    position: relative;
+    top:60px ;
+    border: none;
+    background-color:hsl(158, 36%, 37%);
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.price{
+    color: hsl(158, 36%, 37%);
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    
+    top:50px ;
+}
+.price2{
+    position: relative;
+    top: 20px;
+    left: 110px;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: ;
+}
+@media (max-width: 375px) {
+    .card {
+      flex-direction: column; /* Change direction to column at 375px or smaller */
+    }
+
+    .container {
+      order: 2; /* Change order for text container at 375px or smaller */
+    }
+  }
